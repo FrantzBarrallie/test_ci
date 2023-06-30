@@ -1,0 +1,11 @@
+name: test Nico Build.
+on: [push]
+jobs:
+  etape1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Etape 1"
+  etape2:
+    needs: startup
+    steps:
+      - run: echo "Etape 2"
