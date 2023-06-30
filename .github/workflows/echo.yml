@@ -4,8 +4,7 @@ jobs:
   etape1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Etape 1"
-  etape2:
-    needs: startup
-    steps:
-      - run: echo "Etape 2"
+      - name: etape1
+        run: echo "Etape 1" 
+      - name: etape2
+        run: echo "Etape 2" 
