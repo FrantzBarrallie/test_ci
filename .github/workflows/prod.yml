@@ -1,0 +1,12 @@
+name: test Nico Build.
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: mise_en_prod
+        run: echo "Je suis en prod"
